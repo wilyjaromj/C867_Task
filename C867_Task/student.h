@@ -13,7 +13,7 @@ class Student {
         string GetLastName() const;
         string GetEmailAddress() const;
         int GetAge() const;
-        int* GetNumDaysPerCourse() const;
+        const int* GetNumDaysPerCourse() const;
         DegreeProgram GetDegreeProgram() const;
 
         void SetStudentID(string studentId);
@@ -21,7 +21,7 @@ class Student {
         void SetLastName(string lastName);
         void SetEmailAddress(string emailAddress);
         void SetAge(int age);
-        void SetNumDaysPerSourse(int numDaysPerCourse[], int arraySize);
+        void SetNumDaysPerCourse(int numDaysPerCourse[], int arraySize);
         void SetDegreeProgram(DegreeProgram degreeProgram);
 
         void print();
