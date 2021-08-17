@@ -38,5 +38,8 @@ class Student {
         int age;
         vector<int> numDaysPerCourse;
         DegreeProgram degreeProgram;
+
+        string GetDegreeProgramAsString();
+        string GetNumDaysInCourseAsString();
 };
 #endif
