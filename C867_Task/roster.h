@@ -17,6 +17,7 @@ public:
 	void remove(string studentId);
 	void printAll();
 	void printAverageDaysInCourse(string studentId);
+	void printInvalidEmails();
 	void printByDegreeProgram(DegreeProgram degreeProgram);
 private:
 	vector<Student*> students;
