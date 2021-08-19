@@ -15,8 +15,8 @@ void Roster::add(string studentId, string firstName, string lastName, string ema
 
 void Roster::remove(string studentId) {
 	auto spot = find_if(students.begin(), students.end(),
-		[&](const Student student)-> bool {
-			return student.GetStudentID() == studentId;
+		[&](Student* student)-> bool {
+			return (*student).GetStudentID() == studentId;
 		});
 	if (spot != students.end()) {
 		/*students.erase(remove_if(students.begin(), students.end(),
