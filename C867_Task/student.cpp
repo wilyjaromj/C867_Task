@@ -3,7 +3,7 @@ using namespace std;
 #include <iostream>
 #include "student.h"
 
-Student::Student(string studentId, string firstName, string lastName, string emailAddress,
+Student::Student(string studentID, string firstName, string lastName, string emailAddress,
 	int age, vector<int> numDaysPerCourse, DegreeProgram degreeProgram) {
 	this->studentID = studentID;
 	this->firstName = firstName;
@@ -76,7 +76,7 @@ void Student::print() {
 	cout << "Last Name: " << this->lastName << "\t";
 	cout << "Age: " << this->age << "\t";
 	cout << "daysInCourse: " << "{" << GetNumDaysInCourseAsString() << "}" << "\t";
-	cout << "Degree Program: " << GetDegreeProgramAsString() << endl;
+	cout << "Degree Program: " << GetDegreeProgramAsString();
 }
 
 string Student::GetDegreeProgramAsString() {

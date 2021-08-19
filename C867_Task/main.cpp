@@ -11,7 +11,7 @@ int main()
     cout << "C867 Scripting and Programming - Applications ";
     cout << "C++ 001451917 Jarom Williams" << endl;
 
-    Roster roster;
+    Roster* classRoster = new Roster();
 
     const string studentData[] = {
         "A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
@@ -29,9 +29,42 @@ int main()
             getline(s_stream, substr, ',');
             results.push_back(substr);
         }
-        roster.add(results[0], results[1], results[2], results[3], stoi(results[4]),
-            stoi(results[5]), stoi(results[6]), stoi(results[7]))
+
+        DegreeProgram degreeProgram;
+        if (results[8] == "SECURITY") {
+            degreeProgram = DegreeProgram::SECURITY;
+        }
+        else if (results[8] == "NETWORK") {
+            degreeProgram = DegreeProgram::NETWORK;
+        }
+        else {
+            degreeProgram = DegreeProgram::SOFTWARE;
+        }
+
+        (*classRoster).add(results[0], results[1], results[2], results[3], stoi(results[4]),
+            stoi(results[5]), stoi(results[6]), stoi(results[7]), degreeProgram);
     }
+
+    cout << "\n";
+    (*classRoster).printAll();
+    cout << "\n";
+    (*classRoster).printInvalidEmails();
+
+    for (int i = 0; i < 5; ++i) {
+        cout << "\n";
+        (*classRoster).printAverageDaysInCourse((*classRoster).students[i]->GetStudentID());
+    }
+
+    cout << "\n";
+    (*classRoster).printByDegreeProgram(DegreeProgram::SOFTWARE);
+    (*classRoster).remove("A3");
+    cout << "\n";
+    (*classRoster).printAll();
+    cout << "\n";
+    (*classRoster).remove("A3");
+    cout << "\n\n";
+
+    delete classRoster;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

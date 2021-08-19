@@ -9,7 +9,7 @@ using namespace std;
 
 class Student {
     public:
-        Student(string studentId, string firstName, string lastName, string emailAddress,
+        Student(string studentID, string firstName, string lastName, string emailAddress,
             int age, vector<int> numDaysPerCourse, DegreeProgram degreeProgram);
 
         string GetStudentID() const;
