@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     cout << "C867 Scripting and Programming - Applications ";
-    cout << "C++ 001451917 Jarom Williams" << endl;
+    cout << "C++ 001451917 Jarom Williams\n";
 
     Roster* classRoster = new Roster();
 
