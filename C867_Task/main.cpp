@@ -55,6 +55,7 @@ int main()
 
     cout << "\n";
     (*classRoster).printByDegreeProgram(DegreeProgram::SOFTWARE);
+    cout << "\n";
     (*classRoster).remove("A3");
     cout << "\n";
     (*classRoster).printAll();

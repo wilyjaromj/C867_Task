@@ -20,6 +20,7 @@ void Roster::remove(string studentID) {
 		});
 
 	if (spot != students.end()) {
+		cout << "Removing student with ID: " << studentID << " from roster.\n";
 		students.erase(remove_if(students.begin(), students.end(),
 			[&](Student* student)-> bool {
 				return (*student).GetStudentID() == studentID;

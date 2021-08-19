@@ -1,9 +1,7 @@
-﻿  main.cpp
-  roster.cpp
-C:\dev\School\C867_Task\C867_Task\roster.cpp(35,20): warning C4018: '<': signed/unsigned mismatch
-C:\dev\School\C867_Task\C867_Task\roster.cpp(46,20): warning C4018: '<': signed/unsigned mismatch
-C:\dev\School\C867_Task\C867_Task\roster.cpp(48,22): warning C4018: '<': signed/unsigned mismatch
-C:\dev\School\C867_Task\C867_Task\roster.cpp(64,20): warning C4018: '<': signed/unsigned mismatch
-C:\dev\School\C867_Task\C867_Task\roster.cpp(82,20): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+﻿  roster.cpp
+C:\dev\School\C867_Task\C867_Task\roster.cpp(36,20): warning C4018: '<': signed/unsigned mismatch
+C:\dev\School\C867_Task\C867_Task\roster.cpp(47,20): warning C4018: '<': signed/unsigned mismatch
+C:\dev\School\C867_Task\C867_Task\roster.cpp(49,22): warning C4018: '<': signed/unsigned mismatch
+C:\dev\School\C867_Task\C867_Task\roster.cpp(65,20): warning C4018: '<': signed/unsigned mismatch
+C:\dev\School\C867_Task\C867_Task\roster.cpp(83,20): warning C4018: '<': signed/unsigned mismatch
   C867_Task.vcxproj -> C:\dev\School\C867_Task\Debug\C867_Task.exe
